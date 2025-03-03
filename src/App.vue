@@ -60,6 +60,10 @@ const menuName = computed(() => {
 
 const appbarItem = reactive([
   {
+    name: '소개',
+    router: '/introduce',
+  },
+  {
     name: '홈',
     router: '/home',
   },
@@ -70,15 +74,7 @@ const appbarItem = reactive([
   {
     name: '지도',
     router: '/map',
-  },
-  // {
-  //   name: '저장',
-  //   router: '/save',
-  // },
-  // {
-  //   name: '마이페이지',
-  //   router: '/mypage',
-  // },
+  }
 ]);
 const mapSearchParams = useMapStore().mapSearchParams;
 function getCurrentLocation() {

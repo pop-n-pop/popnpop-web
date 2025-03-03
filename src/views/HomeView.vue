@@ -25,6 +25,7 @@ const homeStore = useHomeStore();
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
 
 </style>

@@ -11,13 +11,11 @@ import 'v-calendar/style.css';
 
 import {QueryClient, VueQueryPlugin} from "vue-query";
 
-
-const queryClient = new QueryClient();
 import '@vuepic/vue-datepicker/dist/main.css'
 import {createNaverMap} from "vue3-naver-maps";
 import {SnackbarService} from "vue3-snackbar";
 import VCalendar, {Calendar, DatePicker, setupCalendar} from 'v-calendar';
-
+const queryClient = new QueryClient();
 const app = createApp(App);
 
 app

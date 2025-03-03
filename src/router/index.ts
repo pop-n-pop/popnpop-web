@@ -4,7 +4,7 @@ import StoreDetailView from "@/views/StoreDetailView.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    redirect: "/home",
+    redirect: "/introduce",
     children: [
       {
         path: "home",
@@ -21,6 +21,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "store/:id",
         component: StoreDetailView,
+      },
+      {
+        path: "introduce",
+        component: () => import("@/views/IntroduceView.vue"),
       },
     ],
   },

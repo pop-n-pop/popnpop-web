@@ -26,6 +26,15 @@
   letter-spacing: $letter-spacing;
   line-height: 140%;
 }
+
+.introduce-title {
+  font-family: 'Gmarket Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 115%;
+}
+
 // Header1 스타일
 .header1-light {
   @include font-style(26px, 300, -0.15px);
@@ -145,4 +154,7 @@
 
 .custom-stroke{
   -webkit-text-stroke-width: 0.5px;
+}
+.custom-stroke-introduce{
+  -webkit-text-stroke-width: 0.2px;
 }

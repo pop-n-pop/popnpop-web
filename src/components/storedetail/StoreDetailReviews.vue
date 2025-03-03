@@ -44,8 +44,8 @@
             {{ review.comment }}
           </p>
         </div>
-        <div class="d-flex ml-5">
-          <div v-for="(img, index) in review.images" class="d-flex" :key="index">
+        <div class="d-flex ml-5 image-scroll-container">
+          <div v-for="(img, index) in review.images" class="d-flex " :key="index">
             <v-img @click="toggleDialog(img.imageUrl)" width="120" height="120" :src="img.imageUrl" class="image-container mr-3" cover style="cursor: pointer;"></v-img>
           </div>
         </div>
@@ -97,6 +97,18 @@ const toggleDialog = (imgUrl: string) => {
   border-radius: 12px;
   border: 1px solid #EFEDF0;
   margin: 20px;
+}
+
+.image-scroll-container{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.image-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 </style>

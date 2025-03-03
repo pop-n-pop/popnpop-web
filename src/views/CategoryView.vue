@@ -55,12 +55,7 @@
       v-model:pageDeactiveIndex="pageDeactiveIndex"
   />
 
-  <div :class="screenWidth >= 1700 ? 'd-flex justify-space-between' : 'd-flex justify-center'">
-    <CategoryAreaPicker class="ml-8"
-                        v-model:pageActiveIndex="pageActiveIndex"
-                        v-model:pageDeactiveIndex="pageDeactiveIndex"
-                        v-if="screenWidth > 1700">
-    </CategoryAreaPicker>
+  <div class="d-flex justify-center">
     <v-tabs-window v-model="tab" :transition="false">
       <v-tabs-window-item
           :value=1
@@ -135,13 +130,6 @@
         </div>
       </v-tabs-window-item>
     </v-tabs-window>
-
-    <CategoryDatePicker class="mr-8"
-                        v-model:pageActiveIndex="pageActiveIndex"
-                        v-model:pageDeactiveIndex="pageDeactiveIndex"
-                        v-model:date="date"
-                        v-if="screenWidth > 1700">
-    </CategoryDatePicker>
   </div>
 
 
