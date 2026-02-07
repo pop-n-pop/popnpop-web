@@ -17,7 +17,7 @@ export default defineComponent({
   props: {
     adClient: {
       type: String,
-      default: 'ca-pub-3736938424447377' // Replace with your actual AdSense client ID
+      default: 'ca-pub-5133182965595028' // Replace with your actual AdSense client ID
     },
     adSlot: {
       type: String,
