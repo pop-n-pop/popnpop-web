@@ -4,7 +4,7 @@ import StoreDetailView from "@/views/StoreDetailView.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    redirect: "/introduce",
+    redirect: "/home",
     children: [
       {
         path: "home",
