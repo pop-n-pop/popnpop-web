@@ -42,6 +42,8 @@
     <v-main>
       <router-view :key="route.fullPath" />
     </v-main>
+
+    <AppFooter />
   </v-app>
 </template>
 
@@ -49,6 +51,7 @@
 import {computed, onMounted, reactive} from "vue";
 import {useRoute, useRouter} from "vue-router";
 import {useMapStore} from "@/stores/MapStore";
+import AppFooter from "@/components/common/AppFooter.vue";
 
 const router = useRouter();
 const route = useRoute();

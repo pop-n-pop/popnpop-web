@@ -26,6 +26,14 @@ const routes: Array<RouteRecordRaw> = [
         path: "introduce",
         component: () => import("@/views/IntroduceView.vue"),
       },
+      {
+        path: "privacy",
+        component: () => import("@/views/PrivacyPolicyView.vue"),
+      },
+      {
+        path: "terms",
+        component: () => import("@/views/TermsOfServiceView.vue"),
+      },
     ],
   },
 ]
