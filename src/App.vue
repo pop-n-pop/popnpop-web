@@ -43,7 +43,7 @@
       <router-view :key="route.fullPath" />
     </v-main>
 
-    <AppFooter />
+    <AppFooter v-if="route.path != '/map'" />
   </v-app>
 </template>
 
